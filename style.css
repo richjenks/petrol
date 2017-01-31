@@ -1,0 +1,13 @@
+[v-cloak] { disply: none; }
+html, body { height: 100%; }
+body {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+body, input { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+input { width: 4em; text-align: right; }
+label { float: right; }
+.results { list-style: none; padding: 0; text-align: center; }
+li { margin-bottom: .5em; text-align: right; border-bottom: 1px solid #ccc; }
+b { float: left; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Petrol Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="app" v-cloak>
+		<h1>Petrol Calculator</h1>
+		<input name="ppl" type="number" min="0" step="1" v-model="ppl">
+		<label for="ppl">Pence per Litre</label>
+		<br>
+		<input name="mpg" type="number" min="0" step="1" v-model="mpg">
+		<label for="mpg">Miles per Gallon</label>
+		<br>
+		<input name="dim" type="number" min="0" step="1" v-model="dim">
+		<label for="dim">Journey in Miles</label>
+		<ul class="results">
+			<li><b>£{{ ppg }}</b> per Gallon</li>
+			<li><b>£{{ ppm }}</b> per Mile</li>
+			<li><b>£{{ jc }}</b> for Journey</li>
+		</ul>
+	</div>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
